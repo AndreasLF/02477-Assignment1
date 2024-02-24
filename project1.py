@@ -31,3 +31,15 @@ print(f"Mean: {mean}")
 print(f"95% credibility interval: {cred_int_95}")
 
 # %% 
+
+# ==================== Task 1.3 ====================
+a1_post = 4 + 2
+b1_post = 20-4+17
+
+posterior1 = beta_dist(a1_post, b1_post)
+
+mean1 = posterior1.mean()
+cred_int_951 = beta_dist.interval(0.95, a1_post, b1_post)
+
+print(f"Mean: {mean1}")
+print(f"95% credibility interval: {cred_int_951}")
